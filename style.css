@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nunito&family=Pacifico&family=REM:wght@500&family=Tilt+Neon&family=Unbounded&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Unbounded', cursive;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#gameContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(90, 204, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameContainer #panel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(216, 238, 239);
+    border-radius: 10px;
+}
+
+#gameContainer #panel #panelNav {
+    padding-inline: 15%;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(75, 121, 123);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gameContainer #panel #panelNav .info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#gameContainer #panel #panelNav .info span{
+    padding: 10px 15px;
+    color: rgb(70, 71, 71);
+    background-color: rgb(184, 222, 224);
+    border-radius: 10px;
+}
+
+#gameContainer #panel #panelGameArea{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#gameContainer #panel #panelGameArea #gameOver{
+    color: black;
+}
+
+#gameContainer #panel #panelGameArea .bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bubble-color);
+}
+
+#gameContainer #panel #panelGameArea .bubble:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
